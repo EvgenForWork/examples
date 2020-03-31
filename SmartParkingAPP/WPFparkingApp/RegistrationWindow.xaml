@@ -1,0 +1,42 @@
+﻿<Window x:Class="WPFparkingApp.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFparkingApp"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="450" Width="700" Background="PeachPuff">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" FontSize="30">Name:</TextBlock>
+        <TextBox Name="newUserNameTextBox" Grid.Row="0" Grid.Column="1" Margin="15" FontSize="30"></TextBox>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" FontSize="30">Phone Number:</TextBlock>
+        <TextBox Name="newUserPhoneTextBox" Grid.Row="1" Grid.Column="1" Margin="15" FontSize="30"></TextBox>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" FontSize="30">Car Number:</TextBlock>
+        <TextBox Name="newCarPlateNumberTextBox" Grid.Row="2" Grid.Column="1" Margin="15" FontSize="30"></TextBox>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" FontSize="30">Password:</TextBlock>
+        <PasswordBox Name="newUserPassPassBox" Grid.Row="3" Grid.Column="1" Margin="15" FontSize="30"></PasswordBox>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" FontSize="30">Confirm Password:</TextBlock>
+        <PasswordBox Name="newUserConfPassPassBox" Grid.Row="4" Grid.Column="1" Margin="15" FontSize="30"></PasswordBox>
+
+        <Button Name="GoRegButton" Click="GoRegButton_Click" Grid.Row="5" Grid.Column="1" Margin="80 10" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="LightSeaGreen">Go</Button>
+        <Button Name="CancelRegButton" Click="CancelRegButton_Click" Grid.Row="5" Grid.Column="0" Margin="80 10" FontSize="30" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="LightSeaGreen">Cancel</Button>
+
+    </Grid>
+</Window>
